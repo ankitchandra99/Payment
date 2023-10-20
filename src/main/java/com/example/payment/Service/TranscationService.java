@@ -32,9 +32,6 @@ public class TranscationService {
     }
 
     public double getTotalSuccessfulTransactionsAmount(Integer userId) {
-
-        Optional<User> optionalUser=userRepository.findById(userId);
-        optionalUser.get();
         List<Transaction> successfulTransactions = transcationRepository.findByIsSuccess(true);
         double totalAmount = 0.0;
         for (Transaction transaction : successfulTransactions) {

@@ -23,8 +23,6 @@ public class Transaction {
         this.transactionId = transactionId;
         this.amount = amount;
         this.isSuccess = isSuccess;
-        this.user = user;
-        this.refund = refund;
     }
 
     @ManyToOne
