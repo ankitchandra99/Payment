@@ -1,6 +1,4 @@
 package com.example.payment.Entity;
-
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

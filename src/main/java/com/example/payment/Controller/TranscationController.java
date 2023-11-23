@@ -42,7 +42,8 @@ public class TranscationController {
     }
 
     @DeleteMapping("/failed")
-    public void deleteFailedTransactions() {
-        transcationService.deleteFailedTransactions();
+    public String deleteFailedTransactions(@RequestParam Integer userId)
+    {
+        return userService.deleteFailedTransactions(userId);
     }
 }
